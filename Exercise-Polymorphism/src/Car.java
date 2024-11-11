@@ -1,12 +1,25 @@
-import java.util.Scanner;
-
 public class Car implements Vehicle{
-//    Scanner input=new Scanner(System.in);
 
-    String model;
-    double days;
+    private String model;
+    private double days;
 
- //رسوم الايجار
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public double getDays() {
+        return days;
+    }
+
+    public void setDays(double days) {
+        this.days = days;
+    }
+
+    //رسوم الايجار
     @Override
     public double calculateRentalCost() {
         return days*50;
