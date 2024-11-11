@@ -21,37 +21,39 @@ public class Main {
              number = input.nextInt();
             input.nextLine();
 
-            Vehicle vehicle;
+           
             switch (number) {
-                case 1:
-                    vehicle = new Car(); // الإشارة إلى كائن Car
+             case 1:
+                    Car c1 = new Car();
                     System.out.println("Enter Car Model: ");
-                    ((Car) vehicle).model = input.nextLine();
+                    c1.model = input.nextLine();
                     System.out.println("Enter Rental Days: ");
-                    ((Car) vehicle).days = input.nextDouble();
-                    vehicle.displayDetails();
-                    rentedVehicles.add(vehicle);
+                    c1.days = input.nextDouble();
+                    c1.displayDetails();
+                    rentedVehicles.add(c1);
                     break;
 
                 case 2:
-                vehicle = new Bike(); // الإشارة إلى كائن Bike
-                System.out.println("Enter Bike Brand: ");
-                ((Bike) vehicle).brand = input.nextLine();
-                System.out.println("Enter Hourly Rental Rate: ");
-                ((Bike) vehicle).hour = input.nextDouble();
-                vehicle.displayDetails();
-                rentedVehicles.add(vehicle);
-                break;
+                    Bike b1 = new Bike();
+                    System.out.println("Enter Bike Brand: ");
+                    b1.brand = input.nextLine();
+                    System.out.println("Enter Hourly Rental Rate: ");
+                    b1.hour = input.nextDouble();
+                    b1.displayDetails();
+                    rentedVehicles.add(b1);
+                    break;
 
                 case 3:
-                    vehicle = new Truck(); // الإشارة إلى كائن Truck
+                    Truck t1 = new Truck();
                     System.out.println("Enter type Truck: ");
-                    ((Truck) vehicle).type = input.nextLine();
+                    t1.type = input.nextLine();
                     System.out.println("Enter Daily Rental Rate: ");
-                    ((Truck) vehicle).week = input.nextDouble();
-                    vehicle.displayDetails();
-                    rentedVehicles.add(vehicle);
+                    t1.week = input.nextDouble();
+                    t1.displayDetails();
+                    rentedVehicles.add(t1);
                     break;
+
+
 
 
                 case 4:
