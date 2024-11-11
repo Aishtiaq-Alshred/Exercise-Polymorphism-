@@ -21,14 +21,14 @@ public class Main {
              number = input.nextInt();
             input.nextLine();
 
-           
+
             switch (number) {
-             case 1:
+                case 1:
                     Car c1 = new Car();
                     System.out.println("Enter Car Model: ");
-                    c1.model = input.nextLine();
+                    c1.setModel(input.nextLine());
                     System.out.println("Enter Rental Days: ");
-                    c1.days = input.nextDouble();
+                    c1.setDays(input.nextDouble());
                     c1.displayDetails();
                     rentedVehicles.add(c1);
                     break;
@@ -36,9 +36,9 @@ public class Main {
                 case 2:
                     Bike b1 = new Bike();
                     System.out.println("Enter Bike Brand: ");
-                    b1.brand = input.nextLine();
+                    b1.setBrand(input.nextLine());
                     System.out.println("Enter Hourly Rental Rate: ");
-                    b1.hour = input.nextDouble();
+                    b1.setHour(input.nextDouble());
                     b1.displayDetails();
                     rentedVehicles.add(b1);
                     break;
@@ -46,14 +46,12 @@ public class Main {
                 case 3:
                     Truck t1 = new Truck();
                     System.out.println("Enter type Truck: ");
-                    t1.type = input.nextLine();
+                    t1.setType(input.nextLine());
                     System.out.println("Enter Daily Rental Rate: ");
-                    t1.week = input.nextDouble();
+                    t1.setWeek(input.nextDouble()) ;
                     t1.displayDetails();
                     rentedVehicles.add(t1);
                     break;
-
-
 
 
                 case 4:
