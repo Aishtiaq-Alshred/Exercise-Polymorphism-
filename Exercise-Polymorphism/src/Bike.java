@@ -1,8 +1,23 @@
 public class Bike implements Vehicle{
 
-    String brand;
-    double hour;
+    private String brand;
+   private double hour;
 
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public double getHour() {
+        return hour;
+    }
+
+    public void setHour(double hour) {
+        this.hour = hour;
+    }
 
     @Override
     public double calculateRentalCost() {
@@ -18,3 +33,4 @@ public class Bike implements Vehicle{
 
     }
 }
+
